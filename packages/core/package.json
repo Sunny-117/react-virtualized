@@ -1,9 +1,13 @@
 {
   "name": "@virtial-react-dom/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/virtial-react-dom.cjs.js",
   "module": "./dist/virtial-react-dom.esm.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "publishConfig": {
     "access": "public"
   },

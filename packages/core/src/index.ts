@@ -4,7 +4,7 @@ interface VirtualScrollOptions {
   itemHeight: number;
 }
 
-class VirtualScrollSDK {
+export class VirtualScrollSDK {
   private container: HTMLElement;
   private content: HTMLElement;
   private itemHeight: number;
@@ -52,15 +52,15 @@ class VirtualScrollSDK {
   }
 }
 
-// 使用示例
-const container = document.getElementById("container");
-const content = document.getElementById("content");
+// // 使用示例
+// const container = document.getElementById("container");
+// const content = document.getElementById("content");
 
-if (container && content) {
-  const virtualScroll = new VirtualScrollSDK({
-    container,
-    content,
-    itemHeight: 30,
-  });
-  virtualScroll.init();
-}
+// if (container && content) {
+//   const virtualScroll = new VirtualScrollSDK({
+//     container,
+//     content,
+//     itemHeight: 30,
+//   });
+//   virtualScroll.init();
+// }

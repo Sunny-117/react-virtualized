@@ -8,6 +8,23 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="container" style="height: 400px; overflow: auto;">
+      <div id="content"></div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      import {VirtualScrollSDK} from "@virtial-react-dom/core";
+      const container = document.getElementById('container');
+      const content = document.getElementById('content');
+
+      if (container && content) {
+        const virtualScroll = new VirtualScrollSDK({
+          container,
+          content,
+          itemHeight: 50,
+        });
+        virtualScroll.init();
+      }
+    </script>
   </body>
 </html>
