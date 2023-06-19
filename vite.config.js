@@ -8,7 +8,7 @@ import module from "module";
 export default defineConfig({
   plugins: [react(), reactVirtualized()],
 });
-
+// to resolve https://github.com/bvaughn/react-virtualized/issues/1632
 const WRONG_CODE = `import { bpfrpt_proptype_WindowScroller } from "../WindowScroller.js";`;
 const require = module.createRequire(import.meta.url);
 function reactVirtualized() {
